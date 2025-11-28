@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap');
+html{
+    background-color: #97d4cf
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 40px;
+    
+}
+#cart-icon{
+    margin-left: 70%;
+    font-size: 3.2rem;
+    position:relative;
+    cursor: pointer;
+}
+#cart-icon[data-quantity]::after{
+    content: attr(data-quantity);
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(255, 1, 1);
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: rgb(71, 72, 72);
+    box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 1000;
+
+}
+.cart.active{
+    right: 0;
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: white;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid #97d4cf;
+}
+.total-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: white;
+}
+.total-price{
+    font-size: 1.075rem;
+    margin: 1rem 0 0 0.7rem;
+    color: white;
+}
+.btn-buy{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    width: 50%;
+    text-align: center;
+    border: none;
+    border-radius: 2rem;
+    background: #97d4cf;
+    color: white;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 500;
+    cursor: pointer;
+}
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+.cart-price{
+    color: white;
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid #97d4cf;
+    outline-color: black;
+    width: 2.8rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.cart-remove{
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.first{
+    margin: 5%;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.line{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 400px;
+    white-space: nowrap;
+}
+.goods{
+    width: 60%;
+    margin: 80px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.place {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+    flex-basis: 31%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    position: relative;
+    align-items: center;
+    letter-spacing: 1px;
+    box-shadow: 0 20px 20px rgb(25, 24, 24) ;
+    opacity: 1;
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+}
+.place button{
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 20px;
+    padding: 3px 3px;
+    margin: 15px ;
+    width: 150px;
+    cursor: pointer;
+}
+.btn img{
+    width: 20%;
+    height: 30%;
+}
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    fill: white;
+}
+.payment-cont{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.payment-cont img{
+    width: 200px;
+    margin: 2rem 0;
+
+}
+.payment-cont h1{
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+.payment-cont p{
+    max-width: 600px;
+    font-size: 0.97rem;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+.sc-btn{
+    padding: 12px 20px;
+    border-radius: 2rem;
+    background-color: rgb(71, 72, 72);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    gap: 200px;
+}
+.pay-sec{
+    align-items: center;
+    justify-content: space-between;
+}
+.detail-sec{
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+.but-pay1{
+    height: 50px;
+    width: 300px;
+}
+.but-pay2{
+    height: 50px;
+    width: 300px;
+}
+.but-pay3{
+    height: 50px;
+    width: 300px;
+}
+
+/*Making Responsiveness for small device (phone)*/
+@media (max-width: 1080px) {
+    .first {
+        margin: 20px; /* reduce margin for smaller screens*/
+    }
+
+    .line {
+        min-width: 100%;
+        flex-direction: column;    /* full width*/
+        text-align: center;
+    }
+
+    .goods{
+        width: 100%;     /*full width*/
+        margin: 20px 0;
+    }
+
+    .row {
+        flex-direction: column; /*stack items vertically*/
+        align-items: center;
+    }
+    .place {
+        width: 90%;   /* wider on small screens*/
+        margin-bottom: 20px;
+    }
+    .place button {
+        position: relative;
+        top: auto;
+        bottom: 50%;
+        left: auto;
+        transform: none;
+        margin-top: 10px;
+    }
+    #cart-icon {
+        margin-left: auto; /*center or align right */
+    }
+}
+
+/* Medium devices (tablets) */
+@media (max-width: 1024px){
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .place {
+        flex-basis: 45%; /*allow 2 items per row*/
+    }
+}
+

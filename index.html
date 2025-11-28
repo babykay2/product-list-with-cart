@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Product List with cart</title>
+        <html lang="en">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flaticon/7.0.0/flaticon.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+
+    <section class="first">
+        <div class="line">
+            <h1>Cream & Desserts</h1> 
+            <i class='bx bxs-cart' alt="Shopping cart" id="cart-icon" data-quantity="0"></i>
+
+<!----------------Cart section------------------------------------------------------------>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+<!----------------------------------What cart will contain----------------------------------------------------------->
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="https://sugargeekshow.com/wp-content/uploads/2022/01/panna_cotta_recipe-41-of-43-1-1200x1200.jpg" alt="" class="cart-img" />
+                        <div class="detail-box">
+                            <div class="cart-product-title">Panna cotta</div> 
+                            <div class="cart-price">$6.50</div>
+                            <input 
+                                type="number"
+                                name=""
+                                id=""
+                                value="1"
+                                class="cart-quantity"
+                            />
+                        </div>
+
+<!-----------------------------------------delete items----------------------------------------------------------------->
+                        <i class="bx bx-trash-alt cart-remove"></i>
+                    </div>
+                </div>
+<!------------------------------------------price count---------------------------------------------->
+                <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+                </div>
+<!---------------------------------The buy button-------------------------------------------->
+            <button type="button" class="btn-buy">Pay Now</button>
+<!-----------------------------the close icon------------------------------------------------>
+            <i class='bx bx-x'  id="close-cart"></i>
+        </div>
+        </div>
+    </section>
+    
+    <section class="goods">
+
+        <div class="row">
+            <div class="place">
+            <img class="place" src="https://sugargeekshow.com/wp-content/uploads/2022/01/panna_cotta_recipe-41-of-43-1-1200x1200.jpg"><br>
+            <button class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/128/7640/7640571.png" alt="Shopping cart">Add to cart</button>
+            <p> Drink<br>
+            <b>Panna cotta</b><br>
+            $6.50
+            </p>
+    
+        </div>
+           <div class="place">
+            <img class="place" src="https://www.tasteofhome.com/wp-content/uploads/2019/05/Fried-Ice-Cream-Dessert-Bars-_EXPS_SDJJ19_232652_B02_06_1b_rms-2.jpg"><br>
+            <button class="btn"> 
+                <img src="https://cdn-icons-png.flaticon.com/128/7640/7640571.png" alt="Shopping cart">Add to cart</button>
+            <p>Ice cream<br>
+            <b>Fried Ice Cream</b><br>
+            $7.00
+            </p>
+        </div>
+
+          <div class="place">
+            <img class="place" src="https://starbakepatisseries.co.uk/cdn/shop/files/1M4A8181_1200x1200.jpg?v=1700824694"><br>
+            <button class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/128/7640/7640571.png" alt="Shopping cart">Add to cart</button>
+            <p>Cake<br>
+            <b> Biscof Cheesecake</b><br>
+            $8.00
+
+            </p>
+        </div>
+        </div>
+    </section>
+
+<!-------------------------Second section---------------------------------------------->
+    <section class="goods">
+
+        <div class="row">
+            <div class="place">
+            <img class="place" src="https://www.howtocookthat.net/wp-content/uploads/2016/12/P2220355-1200x1200-cropped.jpg"><br>
+            <button class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/128/7640/7640571.png" alt="Shopping cart">Add to cart</button>
+            <p>Ice cream<br>
+            <b>Ice cream sundae</b><br>
+            $10.00
+            </p>
+    
+        </div>
+           <div class="place">
+            <img class="place" src="https://myincrediblerecipes.com/wp-content/uploads/2023/08/halloween-lush-dessert.jpg"><br>
+            <button class="btn">
+                 <img src="https://cdn-icons-png.flaticon.com/128/7640/7640571.png" alt="Shopping cart">Add to cart</button>
+            <p>Dessert<br>
+            <b>Hallowen Lush</b><br>
+            $15.00
+            </p>
+        </div>
+
+          <div class="place">
+            <img class="place" src="https://www.errenskitchen.com/wp-content/uploads/2021/01/Ganache-01.jpg"><br>
+            <button class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/128/7640/7640571.png" alt="Shopping cart">Add to cart</button>
+            <p>Creme<br>
+            <b>Chocolate Pots de creme</b><br>
+            $20.00
+            </p>
+        </div>
+        </div>
+
+    </section>
+<!--------------------Last section------------------------------------------------------------->
+
+
+    <section class="goods">
+        <div class="row">
+            <div class="place">
+            <img class="place" src="https://thedempseyproject.com/cdn/shop/products/apple-crumble_1600x.jpg?v=1644459272"><br>
+            <button class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/128/7640/7640571.png" alt="Shopping cart">Add to cart</button>
+            <p>Dessert <br>
+            <b>Cake</b><br>
+            $5.50
+            </p>
+    
+        </div>
+           <div class="place">
+            <img class="place" src="https://www.ramonascuisine.com/wp-content/uploads/creme-brulee.jpg"><br>
+            <button class="btn">
+                 <img src="https://cdn-icons-png.flaticon.com/128/7640/7640571.png" alt="Shopping cart">Add to cart</button>
+            <p>Creme<br>
+            <b>Creme brulee</b><br>
+            $9.50
+            </p>
+        </div>
+
+          <div class="place">
+            <img class="place" src="https://beyondfrosting.com/wp-content/uploads/2023/02/No-Bake-Cookie-Dough-Cheesecake-048-2.jpg"><br>
+            <button class="btn">
+                <img src="https://cdn-icons-png.flaticon.com/128/7640/7640571.png" alt="Shopping cart">Add to cart</button>
+            <p>Cake<br>
+            <b>Ice cream cake</b><br>
+            $10.00
+            </p>
+        </div>
+        </div>
+
+    </section>
+<section class="container">
+<!--------------------------Payment section------------------------------------------------------------------------>
+        <div class="pay-sec">
+            <h1>Payment</h1>
+            <p>All transactions are secure and encrypted.</p>
+            <div class="card-sec">
+                <button class="but-pay1">Credit card</button><br>
+                <button class="but-pay2">PayPal</button><br>
+                <button class="but-pay3">Pay later</button>
+            </div>
+        </div>
+<!---------------------Credit card details------------------------------------------->
+            <div class="detail-sec">
+                <div class="credit-sec">
+                    <p>Amount being paid now: </p>
+                    
+                    <img src="https://cdn-icons-png.flaticon.com/128/196/196578.png" alt="visa">
+                    <img src="https://cdn-icons-png.flaticon.com/128/14035/14035060.png" alt="mastercard">
+                    <img src="https://cdn-icons-png.flaticon.com/128/349/349230.png" alt="discover"><br>
+               
+
+                    <label for="c1">Cardholder's name</label><br>
+                    <input type="text" id="c1" class="input-field" required minlength="0" maxlength="32"><br>
+                    <label for="c2">Card number</label><br>
+                    <input type="text" id="c2" class="input-field" required inputmode="numeric"><br>
+                    <label for="expiration-month"> Expiration date</label><br>
+                    <select id="expiration-month">
+                        <option value="">Month</option>
+                    </select>
+                    <select id="expiration-year">
+                        <option value="">Year</option>
+                    </select><br>
+                    <label for="c4">CVV code</label><br>
+                    <input type="text" id="c4" class="input-field" required minlength="3" maxlength="3" inputmode="numeric">
+
+            </div>
+        </div>
+    </section>
+<!-----------------------------Java Script---------------------->
+        <script src="index.js"></script>
+    </body>
+</html>
